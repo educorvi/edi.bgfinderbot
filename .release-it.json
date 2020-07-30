@@ -11,11 +11,11 @@
     "assets":["./dist.zip"]
   },
   "npm": {
-    "publish": true
+    "publish": false
   },
   "hooks": {
-    "before:init": ["npm run lint", "npm test"],
-    "after:bump": ["npm run doc", "npm run build", "npm run zip"],
+    "before:init": ["npm run lint"],
+    "after:bump": ["npm run build", "npm run zip"],
     "after:release": ["npm run clean","echo Successfully released ${name} v${version} to ${repo.repository}."]
   }
 

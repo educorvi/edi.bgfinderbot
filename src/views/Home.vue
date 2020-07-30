@@ -21,7 +21,7 @@
 
 <script>
     // @ is an alias to /src
-    import {yesNoMaybe} from "../chatLogic";
+    import chatLogic from "edi.chatbot";
     import Chatroom from "../components/Chatroom";
 
     export default {
@@ -45,7 +45,7 @@
                     time: new Date()
                 });
                 this.messages.unshift({
-                    text: this.$t(yesNoMaybe(this.input, this.$i18n.locale).goal),
+                    text: this.$t(chatLogic.yesNoMaybe(this.input, this.$i18n.locale).goal),
                     isSelf: false,
                     time: new Date()
                 });

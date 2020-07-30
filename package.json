@@ -1,13 +1,12 @@
 {
-  "name": "edi.chatbot",
-  "version": "0.3.5",
+  "name": "edi.bgfinderbot",
+  "version": "0.1.0",
   "private": false,
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
     "test": "jest --silent",
-    "doc": "documentation build src/chatLogic.js -f html -o docs",
     "zip": "vue-cli-service zip:build",
     "release": "dotenv release-it",
     "clean": "del-cli dist*"
@@ -16,7 +15,7 @@
     "bootstrap": "^4.5.0",
     "bootstrap-vue": "^2.15.0",
     "core-js": "^3.6.5",
-    "fast-levenshtein": "^2.0.6",
+    "edi.chatbot": "^1.0.1",
     "vue": "^2.6.11",
     "vue-i18n": "^8.18.2",
     "vue-router": "^3.2.0"
@@ -29,7 +28,7 @@
     "archiver": "^5.0.0",
     "auto-changelog": "^2.2.0",
     "babel-eslint": "^10.1.0",
-    "documentation": "^13.0.2",
+    "del-cli": "^3.0.1",
     "dotenv-cli": "^3.2.0",
     "eslint": "^6.7.2",
     "eslint-plugin-vue": "^6.2.2",
@@ -39,16 +38,7 @@
     "release-it": "^13.6.5",
     "sass-loader": "^8.0.2",
     "vue-cli-plugin-build-zip": "^0.0.3",
-    "vue-template-compiler": "^2.6.11",
-    "del-cli": "^3.0.1"
-  },
-  "main": "npm-index.js",
-  "bugs": {
-    "url": "https://github.com/educorvi/edi.chatbot/issues"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/educorvi/edi.chatbot"
+    "vue-template-compiler": "^2.6.11"
   },
   "eslintConfig": {
     "root": true,
