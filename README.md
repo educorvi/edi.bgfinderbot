@@ -1,6 +1,6 @@
-# chatbot
+# bgfinderbot
 
-## Project setup to use demo Application
+## Project setup 
 #### Install Dependencies
 ```
 npm run install
@@ -14,7 +14,3 @@ npm run serve
 npm run build
 ```
 
-## Also usable as npm package
-```
-npm install edi.chatbot
-```
