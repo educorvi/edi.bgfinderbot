@@ -53,9 +53,12 @@
 
             }
         },
-        created() {
-            // let userLang = navigator.language || navigator.userLanguage;
-            // alert ("The language is: " + userLang);
+        mounted() {
+          this.messages.unshift({
+            text: this.$t("welcomeMessage"),
+            isSelf: false,
+            time: new Date()
+          });
         }
     }
 </script>

@@ -6,13 +6,19 @@ export default {
     "result":"Ergebnis",
     "try":"Testen",
     "send":"Senden",
-    "unknown":"Nicht verstanden"
+    "unknown":"Nicht verstanden",
+    "welcomeMessage":"Guten Tag. Schildern Sie bitte Ihre Situation."
 }
 
 export const allAlternatives = {
     "yes": ["ja", "schon", "sicher", "jup", "jep"],
     "no": ["ne", "nein", "nö", "nicht"],
     "maybe": ["Vielleicht", "Weiß nicht", "nicht sicher", "keine ahnung", "möglicherweiße", "unsicher"]
+}
+
+export const childOrAdultAlternatives= {
+    "child": ["Jugendlicher", "Kind", "minderjährig", "Schüler"],
+    "adult": ["erwachsen", "Erwachsener", "volljährig"]
 }
 
 export const garbage = [

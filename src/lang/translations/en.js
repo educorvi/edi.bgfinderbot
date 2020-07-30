@@ -6,7 +6,8 @@ export default {
     "result":"Result",
     "try":"Try",
     "send":"Send",
-    "unknown":"Unknown"
+    "unknown":"Unknown",
+    "welcomeMessage":"Good day. Please describe your needs."
 }
 
 export const allAlternatives = {
