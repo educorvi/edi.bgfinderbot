@@ -22,6 +22,8 @@
 <script>
     // @ is an alias to /src
     import chatLogic from "edi.chatbot";
+    import {addTranslations} from "edi.chatbot"
+    import languages from "../lang"
     import Chatroom from "../components/Chatroom";
 
     export default {
@@ -54,6 +56,7 @@
             }
         },
         mounted() {
+          addTranslations(languages);
           this.messages.unshift({
             text: this.$t("welcomeMessage"),
             isSelf: false,

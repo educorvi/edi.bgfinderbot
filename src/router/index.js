@@ -1,8 +1,7 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Home from '../views/Home.vue'
-import { i18n } from "@/main";
-import trans from "../lang"
+// import { i18n } from "@/main";
 
 
 Vue.use(VueRouter)
@@ -11,14 +10,14 @@ Vue.use(VueRouter)
     {
       path: "/:lang",
       component: Home,
-      beforeEnter(to, from, next) {
-        const lang = to.params.lang;
-        if (!Object.keys(trans).includes(lang)) return next("de");
-        if (i18n.locale !== lang) {
-          i18n.locale = lang;
-        }
-        return next();
-      },
+      // beforeEnter(to, from, next) {
+      //   const lang = to.params.lang;
+      //   if (!Object.keys(trans).includes(lang)) return next("de");
+      //   if (i18n.locale !== lang) {
+      //     i18n.locale = lang;
+      //   }
+      //   return next();
+      // },
       children: [
         {
           path: "home",
